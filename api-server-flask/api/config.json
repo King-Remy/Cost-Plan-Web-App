@@ -1,0 +1,24 @@
+{
+    "tasks": [
+        "ifc_validation_task",
+        "xml_generation_task",
+        "xml_to_json_conversion",
+        "geometry_generation_task",
+        "glb_optimize_task",
+        "gzip_task",
+        "svg_rename_task",
+        "svg_generation_task"
+    ],
+    "treeview": {
+        "label": "{{attr.Name or attr.GlobalId}}"
+    },
+    "features": {
+        "screen_share": {
+            "enabled": true
+        }
+    },
+    "performance": {
+        "num_workers": 1,
+        "num_threads": "auto"
+    }
+}

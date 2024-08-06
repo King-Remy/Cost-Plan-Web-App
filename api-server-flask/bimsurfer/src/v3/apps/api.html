@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BIMsurfer Developer Mode</title>
+    <link rel="icon" type="image/png" href="../img/application_home.png" />
+    <link href="../css/apps.css" type="text/css" rel="stylesheet" />
+    <link href="../css/apiref.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+</head>
+
+<script type="module">
+
+
+    import { BimSurfer } from "../viewer/bimsurfer.js";
+    import { BimServerClient } from "../../bimserverjavascriptapi/bimserverclient.js"
+    import { Address } from "./address.js";
+    import { Credentials } from "./credentials.js"
+    import { RenderLayer } from "../viewer/renderlayer.js";
+    import { BimServerViewer } from "../viewer/bimserverviewer.js";
+
+
+    fetch("/../../test.glb").then(function (response) {
+        return response.arrayBuffer();
+    }).then(function (buffer) {
+
+        var surfer = window.bimSurfer = new BimSurfer();
+        var api = new BimServerClient(Address.getApiAddress());
+        var domNode = document.querySelector("canvas")
+        surfer.load({
+            api: api,
+            roid: 65539,
+            domNode: document.querySelector("canvas"),
+            loadertype: 'gltf',
+            buffer: buffer
+        })
+
+    })
+
+    function readFile(file) {
+        return new Response(file).arrayBuffer();
+    }
+
+
+</script>
+
+<body>
+
+    <canvas></canvas>
+    <input type="file" onchange="readFile(this.files[0])" />
+    <!-- <input type="file" id="fileInput" onchange='openFile(event)' /> -->
+    <div id='apirefContainerContainer'>
+        <div id='apirefContainer'>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

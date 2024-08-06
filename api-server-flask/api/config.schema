@@ -1,0 +1,55 @@
+{
+    "type": "object",
+    "properties": {
+        "tasks": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "treeview": {
+            "type": "object",
+            "properties": {
+                "label": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "label"
+            ]
+        },
+        "features": {
+            "type": "object"
+        },
+        "performance": {
+            "type": "object",
+            "properties": {
+                "num_workers": {
+                    "type": "integer"
+                },
+                "num_threads": {
+                    "oneOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "string",
+                            "enum": [
+                                "auto"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "num_workers"
+            ]
+        }
+    },
+    "required": [
+        "tasks",
+        "treeview",
+        "features",
+        "performance"
+    ]
+}

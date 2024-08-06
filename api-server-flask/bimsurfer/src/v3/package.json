@@ -1,0 +1,50 @@
+{
+  "name": "bimsurfer3",
+  "groupId": "org.opensourcebim",
+  "artifactId": "bimsurfer3",
+  "organization": "OpenSource BIM",
+  "version": "0.0.1",
+  "description": "BIMsurferV3",
+  "author": {
+    "name": "Ruben de Laat",
+    "email": "ruben@logic-labs.nl"
+  },
+  "scripts": {},
+  "files": [
+    "js"
+  ],
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TNOBIM/BIMSurfer"
+  },
+  "bugs": {
+    "url": "https://github.com/TNOBIM/BIMSurfer/issues"
+  },
+  "keywords": [],
+  "dependencies": {
+    "bimserverapi": "*",
+    "xhr2": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "babelify": "^10.0.0",
+    "grunt": "^1.1.0",
+    "grunt-browserify": "^5.3.0",
+    "grunt-cli": "^1.3.2",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-nodeunit": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-zip": "*"
+  },
+  "preferGlobal": true,
+  "private": false,
+  "analyze": true,
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}

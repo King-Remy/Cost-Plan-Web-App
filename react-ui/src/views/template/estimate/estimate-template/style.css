@@ -1,0 +1,189 @@
+/*================== Settings ===============*/
+.settingsContainer {
+    position: relative;
+    max-width: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.settingsContainer .select-btn {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding: 0 12px;
+    background-color: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.select-btn .btn-text {
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn-text .btn-icon {
+    cursor: pointer;
+}
+.list-items {
+    position: absolute;
+    margin-top: 12rem;
+    background-color: #38383b;
+    border-radius: 5px;
+    padding: 15px;
+    width: 15rem;
+    color: #fff;
+}
+.list-items li {
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.list-items .heading {
+    font-size: 16px;
+
+}
+/*===TABLE BUTTON STYLING====*/
+.addItem {
+    display: flex;
+    align-items: center;
+}
+.addItem button {
+    background-color: #73f773;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+/*============Table Styling=========*/
+.table-data{
+    height: 400px;
+    box-shadow: 0 .4rem .8rem #0003;
+    margin-top: -1rem;
+}
+
+.tableContainer {
+    width: 100%;
+    margin-top: 2rem;
+}
+.tableContainer thead {
+    border-bottom: 1px solid orange;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    
+    
+}
+ th {
+    border-right: 1px solid #ccc;
+    padding: 13px;
+}
+table tbody{
+    overflow: auto;
+}
+tbody td {
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    width: auto;
+}
+tbody tr:nth-child(even){
+    background-color: #00000006;
+}
+tbody tr:hover {
+    background-color: #fff6;
+}
+.table-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.copyButton button{
+    padding: 3px 4px;
+    background-color: #0000ff;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
+.copyButton button:hover{
+    opacity: 0.5;
+}
+.deleteButton button{
+    padding: 3px 3px;
+    background-color: rgba(228, 8, 8, 0.925);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
+.deleteButton:hover{
+    opacity: 0.5;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.textITem {
+    margin-bottom: 2rem;
+}
+.textITem p{
+    color: #000000;
+}
+
+.createEstimate button {
+    color:#fff;
+    background-color: green;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/*==================ELIST===============*/
+.containerGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+.rightContainerSearch {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.searchItemEstimate {
+    display: flex;
+    width: 19rem;
+    height: 35px;
+    align-items: center;
+    background-color: #f5f1f1f1;
+    border: 0;
+}
+.searchItemEstimate:hover {
+    border: 1px solid orange;
+}
+.searchItemEstimate input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #999;
+}
+
+.searchItemEstimate input::placeholder {
+    font-size: 12px;
+    color: #999;
+    padding-left: 10px;
+}
+
+.settingsContainer {
+    display: flex;
+    align-items: center;
+}
+.settingsContainer .settings {
+    padding: 5.3px;
+}

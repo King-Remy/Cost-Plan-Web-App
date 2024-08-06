@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BIMsurfer 3</title>
+<link rel="icon" type="image/png" href="img/application_home.png" />
+<link href="css/index.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<h1>[EXPERIMENTAL] BIMsurfer 3 Index Page</h1>
+	<p>This page serves as an index page to jump to different example/development/testing applications of BIMsurfer V3</p>
+	<b>To be clear, BIMsurfer 3 is a JavaScript library, not an application, what you see here can be regarded as documentation</b>
+	<div class="wrapper">
+		<div class="mode">
+			<a href="apps/dev.html">
+				<b>Developer Mode</b>
+				<img/>
+			</a>
+			<p>
+				Includes UI to select project, visual settings and stats<br/><br/>
+				When BIMsurfer 3 is loaded from a BIMserver, it will try to connect to it's API, otherwise, it will connect to http://localhost:8080<br/><br/>
+				First time you'll have to login with credentials valid on your BIMserver, after that those will be stored in localStorage<br/><br/>
+				Be advised that not all combinations of all settings will result in something that works
+			</p>
+		</div>
+		<div class="mode">
+			<a href="apps/minimal.html"> 
+				<b>Minimal Demo</b>
+				<img/>
+			</a>
+			<p>
+				A minimal implementation, ready for copy/paste. Make sure to change the default credentials and settings<br/><br/>
+				Also the poid is hardcoded, so don't expect this to simply work by clicking on it
+			</p>
+		</div>
+		<div class="mode hidden">
+			<a href="apps/interactive.html">
+				<b>Interactive Demo</b>
+				<img/>
+			</a>
+			<p>
+				Allows you to select a BIMserver first, login and then select the project you want to visualize
+			</p>
+		</div>
+		<div class="mode">
+			<a href="apps/api.html">
+				<b>API</b>
+				<img/>
+			</a>
+			<p>
+				Shows the basic API functions.<br/><br/> First time you'll have to login with credentials valid on your BIMserver, after that those will be stored in localStorage<br/><br/>
+			</p>
+		</div>
+		<div class="mode test hidden">
+			<a href="apps/tests.html">
+				<b>Functional and Performance tests</b>
+				<p>
+					Will try to load all models from the given server and generate some statistics.
+				</p>
+				<img/>
+			</a>
+		</div>
+	</div>
+	<div>
+		<div>
+		Have you read the <a href="https://github.com/opensourceBIM/BIMsurfer/wiki/Requirements">Requirements</a> document?
+		Have you read the <a href="https://github.com/opensourceBIM/BIMsurfer/wiki/Design">Design</a> document?
+		Have you read the <a href="docs/index.html">API docs</a> (only available when built)?
+		</div>
+	</div>
+	<script>
+		var urlParams = new URLSearchParams(window.location.search);
+		if (urlParams.has("token")) {
+			localStorage.setItem("token", urlParams.get("token"));
+			window.location.href = window.location.origin + window.location.pathname;
+		}
+	</script>
+</body>
+</html>

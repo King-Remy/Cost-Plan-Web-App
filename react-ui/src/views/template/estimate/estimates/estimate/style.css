@@ -1,0 +1,24 @@
+.estimate {
+    display: flex;
+}
+
+.estimateContainer {
+    flex: 6;
+    padding: 10px;
+    background: #fff;
+}
+.itemContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.estimate .top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-container .conatinerRight {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

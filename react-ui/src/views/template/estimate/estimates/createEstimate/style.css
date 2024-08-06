@@ -1,0 +1,242 @@
+.newEstimate {
+    display: flex;
+    
+}
+.newEstimateContainer {
+    flex: 6;
+    padding: 20px;
+    height: 100vh;
+    position: relative;
+}
+.backbtn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.btnBack {
+    width: 7%;
+    padding: 4px;
+    background: lightgray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+.btnBack:hover {
+    opacity: 0.8;
+}
+.backbtn .icon {
+    font-size: 15px;
+    color: #616161;
+}
+
+.backbtn span {
+    color:#616161;
+}
+
+.titleTop {
+    margin-bottom: 20px;
+}
+
+.titleTop span {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 700;
+    font-family: Tahoma, sans-serif;
+}
+.textTop p{
+    line-height: 1.3rem;
+    font-size: 12px;
+    color: #616161;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    background: #fff;
+    width: 40%;
+    padding: 25px;
+    height: 35%;
+    cursor: pointer;
+
+    box-shadow: 0 .4rem .8rem #0005;;
+}
+.card:hover {
+    background: #f6f7f8;
+    border: 1px solid #999;
+}
+.cardContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.buildIcon img {
+    width: 5rem;
+}
+
+.caption {
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+}
+.textCard p{
+    font-size: 11px;
+    color: #616161;
+    line-height: 1rem;
+}
+/*===3 dots ==*/
+/* .logoContent {
+    display:flex;
+    align-items: center;
+} */
+
+.dotContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 18rem;
+}
+.group-menu {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000000;
+    margin-top: 4px;
+    display: none;
+}
+.card:hover .dot {
+    display: block;
+}
+/*=====NEW FORM =======*/
+.new-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.content-container {
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    padding: 20px;
+    height: 100vh;
+    width: 78%;
+    background-color: #fff;
+    box-shadow: 0 .4rem .8rem #0005;
+    /* border-radius: 5px;
+    transform: translate(-50%, -50%); */
+}
+.top-left {
+    flex: 6;
+    margin-top: 30px;
+    background-color: #eceaea;
+}
+.container-right {
+    flex: 3;
+    margin-top: 30px;
+    padding: 6px;
+}
+.contentRightContentContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.contentRightContentContainer .text_title {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 15px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.include_wrapper span {
+    margin-bottom: 6px;
+    color: #000000;
+    font-size: 13px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.include_box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.include_box input {
+    width: 20px;
+    height: 20px;
+
+}
+.include_box label {
+    font-size: 12px;
+    color: black;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.form-group label {
+    color: #000000;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.form-group input {
+    border: 0.4px solid #dfdcdc;
+    padding: 6px;
+    outline: none;
+}
+.form-group input:hover {
+    border: 1px solid orange;
+}
+.form-group input::placeholder {
+    color: #999;
+}
+form .btn_control {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+.btn_control button {
+    width: 100%;
+    padding: 7px;
+    cursor: pointer;
+}
+.btn_control .btnWhite {
+    background-color: #fff;
+    border: 1px solid #035003;
+    border-radius: 4px;
+}
+.btn_control .btnGreen {
+    background-color: #035003;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+}
+.content-container .top-left .logo_titleHeader{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.logo_titleHeader .logo img {
+    width: 3rem;
+}
+.duplexText span {
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+}
+.textLogo .descTitle {
+    font-size: 13px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
